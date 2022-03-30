@@ -8,7 +8,7 @@ let allVideosElem = document.querySelectorAll('#wc-endpoint'); // all videos ele
 let downloadButton = document.querySelectorAll('.ytdl-extension-button')[0]; //download button element
 
 const downloadFunc = ()=>{
-    if (start >= end) {
+    if (start <= end) {
         let interval1 = setInterval(()=>{
             console.log(1);
             if (downloadButton) {
